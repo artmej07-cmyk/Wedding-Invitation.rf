@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <title>Մեր Հարսանիքը</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS կոդը ներառվում է հենց այստեղ */
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#planner">Մեր Հարսանիքը</a>
+        <a href="#day">Օրվա ծրագիր</a>
+        <a href="#register">Գրանցում</a>
+        <a href="#admin">Admin</a>
+    </nav>
+
+    <section id="planner">
+        <div class="container">
+            <h1>💍 Մեր Հարսանիքը 💍</h1>
+            <div class="box">Սիրո և երջանկության այս օրը՝ փետրվարի 27-ին, մենք՝ Արևիկը և Միրոն, սիրով հրավիրում ենք ձեզ, մեր սիրո  պատմության նոր սկիզբը նշելու։</div>
+        </div>
+    </section>
+
+    <section id="day">
+        <div class="container">
+            <h2>⛪ Օրվա ծրագիր</h2>
+            <div class="box">
+                ԵԿԵՂԵՑԻ՝ Կեչառիսի վանական համալիր<br>Ժամ՝ 14:00
+                <hr>
+                ՀԱՆԴԻՍՈՒԹՅՈՒՆՆԵՐԻ ՍՐԱՀ՝ Palais Wedding Hall<br>Ժամ՝ 17:30
+            </div>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h2>📝 Հյուրերի գրանցում</h2>
+            <form id="guestForm">
+                <label>Անուն</label>
+                <input id="name" required>
+                <label>Քանակ</label>
+                <input type="number" id="count" min="1" required>
+                <label>Մաղթանք</label>
+                <textarea id="message"></textarea>
+                <button>Ուղարկել</button>
+            </form>
+            <h3>👥 Ընդհանուր հյուրերի քանակը՝ <span id="total">0</span></h3>
+        </div>
+    </section>
+
+    <section id="admin">
+        <div class="container">
+            <h2>🔐 Admin</h2>
+            <input type="password" id="adminPass" placeholder="Գաղտնաբառ">
+            <button onclick="login()">Մուտք</button>
+            <div id="guestList" class="hidden"></div>
+        </div>
+    </section>
+
+    <script>
+        /* JavaScript կոդը ներառվում է այստեղ */
+    </script>
+
+</body>
+</html>
